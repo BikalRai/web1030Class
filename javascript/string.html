@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Template literal & string</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+
+		let text1 = 'Let"s do it';
+		let text2 = `${text1}`;
+		console.log(text2);
+
+		console.log("1)\n2)\n3)");
+		console.log(`
+			1
+			2
+			3
+			`);
+
+		console.log(`${2 + 3}`);
+
+		console.log(text1.length);
+
+		// string concatenation
+		console.log("Hello" + " " + "World");
+		console.log("Hello " + "World");
+		console.log(`Hello World`);
+
+		console.log(text1[0]);
+
+		console.log(text1[7]);
+
+		// input function
+		// const someString = prompt("Enter string");
+		// console.log(someString[someString.length - 1]);
+
+		console.log(text1.charAt(10));
+
+		console.log("       Hello      ");
+		console.log("       Hello      ".trim());
+
+		console.log(text1.replace(`Let"s`, "again"));
+
+		// text1 = text1.replace(`Let"s`, "again");
+		// console.log(text1);
+
+		let text3 = "Wow!!"
+
+		console.log(text1.concat(text3));
+		console.log(text3.concat(text1));
+
+		console.log("welcome".toUpperCase());
+
+
+		let slicedText1 = text1.slice(0, text1.length);
+		console.log(slicedText1);
+		console.log(slicedText1.slice(0));
+		console.log(slicedText1.slice(6));
+		console.log(slicedText1.slice(6, 8));
+		console.log(slicedText1.slice(-5,-1));
+
+		console.log(text1.split());
+		console.log(text1.split(""));
+		console.log(text1.split(" "));
+		console.log(text1.split(`"`))
+
+		// logical operators
+		// AND => &&
+		// OR => ||
+		// NOT => !
+
+		console.log(3 > 2 && 5 === 5);
+		console.log(3 > 2 && 5 === 5 && 5 !== 5);
+
+		console.log(3 > 2 || 5 !== 5);
+
+
+
+	</script>
+</body>
+</html>
